@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Genrated scratch projects
+*.sb3
+DEBUG.json

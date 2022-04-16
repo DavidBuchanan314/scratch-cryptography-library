@@ -1,6 +1,6 @@
 from boiga import *
 
-from .utils import Utils
+from crypto.utils import Utils
 
 
 class Chat():

@@ -1,12 +1,12 @@
 from boiga import *
 
-from lib.chacha20_csprng import CSPRNG
-from lib.x25519 import X25519
-from lib.chacha20 import ChaCha20
-from lib.chachapoly1305 import ChaChaPoly1305
-from lib.utils import Utils
-from lib.chat import Chat
-from lib.blake2s import BLAKE2s
+from crypto.chacha20_csprng import CSPRNG
+from crypto.x25519 import X25519
+from crypto.chacha20 import ChaCha20
+from crypto.chachapoly1305 import ChaChaPoly1305
+from crypto.utils import Utils
+from crypto.chat import Chat
+from crypto.blake2s import BLAKE2s
 
 project = Project()
 

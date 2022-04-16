@@ -5,12 +5,12 @@ from crypto.x25519 import X25519
 from crypto.chacha20 import ChaCha20
 from crypto.chachapoly1305 import ChaChaPoly1305
 from crypto.utils import Utils
-from .chat import Chat
 from crypto.blake2s import BLAKE2s
+from .chat import Chat
 
 project = Project()
 
-cat = project.new_sprite("Sprite1")
+cat = project.new_sprite("CryptoLib")
 utils = Utils(cat)
 csprng = CSPRNG(cat, utils)
 x25519 = X25519(cat, utils)

@@ -46,7 +46,7 @@ cat.on_flag([
 	chat.wait_for_animation(),
 
 	csprng.rng_get_hex(32),
-	x25519_client_priv <= DETERMINISTIC_KEY if DETERMINISTIC else csprng.rng_get_hex.hex_out,
+	x25519_client_priv <= (DETERMINISTIC_KEY if DETERMINISTIC else csprng.rng_get_hex.hex_out),
 
 	chat.new_message(">", Literal("Privkey: ").join(x25519_client_priv)),
 	chat.wait_for_animation(),
@@ -70,7 +70,7 @@ cat.on_flag([
 	chat.wait_for_animation(),
 
 	csprng.rng_get_hex(4),
-	session_id <= DETERMINISTIC_SESSID if DETERMINISTIC else csprng.rng_get_hex.hex_out,
+	session_id <= (DETERMINISTIC_SESSID if DETERMINISTIC else csprng.rng_get_hex.hex_out),
 
 	chachapoly1305.encrypt(session_key, "00000000c001d00d00000000", "07526574723069640000000000000000000000000000000000000000000000000000000000000000000000000000"),
 

@@ -38,6 +38,9 @@ class ChaChaPoly1305():
 				hexstring = hexstring * 256 + bytearr[i]
 			hexstring >>= start%8
 			hexstring %= 2**length
+			#print("before", hexstring)
+			hexstring = hexstring.simplified()
+			#print("after", hexstring)
 			return hexstring
 
 

@@ -163,7 +163,7 @@ class X25519():
 			],
 
 			#carry_from(locals, C, 11),
-			tmp <= (C[11] - (C[11] % rtotals[11+1])),
+			tmp <= (C[11] - (C[11] % rtotals[11+1])), # todo: cast rtotal to float
 			C[11] <= C[11] - (C[11] - (C[11] % rtotals[11+1])),
 			C[0] <= C[0] + (tmp * (19.0*(2**-255))),
 		]
@@ -516,4 +516,4 @@ if __name__ == "__main__":
 		#benchmark_modmul()
 	])
 
-	project.save("../test.sb3", execute=False)
+	project.save("../test.sb3", execute=True)

@@ -1,7 +1,7 @@
 # Scratch Cryptography Library
 Modern cryptography primitives implemented in Scratch, via [Boiga](https://github.com/DavidBuchanan314/boiga)
 
-**IMPORTANT NOTE:** This is a toy. Don't trust these implementations. Although I have implemented constant-time algorithms, there are no guarantees that they're constant time in the Scratch runtime. Furhermore, I think there are some edge-cases in modular multiplication in poly1305 and x25519 that I need to address, which may be security-relevant.
+**IMPORTANT NOTE:** This is a toy. Don't trust these implementations. Although I have implemented constant-time algorithms, there are no guarantees that they're constant time in the Scratch runtime. Furthermore, I think there are some edge-cases in modular multiplication in poly1305 and x25519 that I need to address, which may be security-relevant.
 
 ## Algorithms:
 

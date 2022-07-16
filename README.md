@@ -3,6 +3,8 @@ Modern cryptography primitives implemented in Scratch, via [Boiga](https://githu
 
 **IMPORTANT NOTE:** This is a toy. Don't trust these implementations. Although I have implemented constant-time algorithms, there are no guarantees that they're constant time in the Scratch runtime. Furthermore, I think there are some edge-cases in modular multiplication in poly1305 and x25519 that I need to address, which may be security-relevant.
 
+A demo project is here: https://scratch.mit.edu/projects/714773326/ (It doesn't do anything useful yet, but you can see what the compiled code looks like)
+
 ## Algorithms:
 
 - BLAKE3 (https://github.com/BLAKE3-team/BLAKE3-specs)
